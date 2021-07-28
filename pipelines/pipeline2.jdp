@@ -1,0 +1,25 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Pull') { 
+            steps {
+                git branch: 'master', credentialsId: 'github-123', url: 'https://github.com/hirajendra2999/rworld.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'echo "Build Successfull"'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Test Success!'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'echo "Deploy Successfull"'
+            }
+        }
+    }
+}
