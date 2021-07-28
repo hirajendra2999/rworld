@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pull') { 
             steps {
-                git branch: 'master', credentialsId: 'github-123', url: 'https://github.com/hirajendra2999/rworld.git'
+                git credentialsId: 'github-www', url: 'https://github.com/hirajendra2999/rworld.git'
             }
         }
         stage('Build') {
