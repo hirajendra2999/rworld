@@ -1,4 +1,4 @@
-pipelineJob('pipelinejob_converted') {
+pipelineJob('pipeline_demo') {
 
   description('')
 
