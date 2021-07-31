@@ -1,23 +1,9 @@
 pipelineJob('pipeline_demo') {
-
   description('')
-
   displayName('pipelinejob_converted')
-
   keepDependencies(false)
-
-  quietPeriod(0)
-
-  checkoutRetryCount(0)
-
-  disabled(false)
-
-  concurrentBuild(false)
-
   configure { flowdefinition ->
-
     flowdefinition / 'actions' << 'org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction'(plugin:'pipeline-model-definition')
-
     flowdefinition / 'actions' << 'org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction'(plugin:'pipeline-model-definition') {
 
       'jobProperties'()
