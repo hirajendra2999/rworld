@@ -5,15 +5,6 @@ pipelineJob('pipeline_demo') {
   configure { flowdefinition ->
     flowdefinition / 'actions' << 'org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction'(plugin:'pipeline-model-definition')
     flowdefinition / 'actions' << 'org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction'(plugin:'pipeline-model-definition') {
-
-      'jobProperties'()
-
-      'triggers'()
-
-      'parameters'()
-
-      'options'()
-
     }
 
     flowdefinition << delegate.'definition'(class:'org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition',plugin:'workflow-cps') {
