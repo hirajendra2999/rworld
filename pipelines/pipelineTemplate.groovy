@@ -1,5 +1,5 @@
 pipelineJob('pipeline_demo') {
-  description('')
+  description('abcd')
   displayName('pipelinejob_converted')
   keepDependencies(false)
   configure { flowdefinition ->
