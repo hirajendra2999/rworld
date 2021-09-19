@@ -1,9 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage('Pull') { 
-            git 'https://github.com/hirajendra2999/studentapp-ui.git'
-            steps {               
+        stage('Pull') {             
+            steps {
+                git 'https://github.com/hirajendra2999/studentapp-ui.git'
             }
         }
         stage('Build') { 
