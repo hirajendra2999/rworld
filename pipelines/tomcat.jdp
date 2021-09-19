@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build') { 
             steps {
-                sh 'echo "Build successefull"'
+               
             }    
         }
         stage('Test') { 
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                sh 'echo "Deploy successefull"'
+               
             }    
         }
     }
